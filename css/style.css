@@ -8,11 +8,58 @@
     margin: 0;
     box-sizing: border-box;
 }
-/* Mobile First*/
-h1 {
-    font-family: TitilliumWeb-Black;
+
+body {
+    color: white;
+    background-color: #1b1426;   
 }
 
+/*classes genericas */
+layout-grid {
+    border: 1px solid salmon;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Mobile First*/
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1b1426;
+}
+
+/*header top*/
+header .header top {
+    display: none;
+}
+
+/*header botom*/
+.alinhamento-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header-bottom {
+    height: 100%;
+}
+header .header-bottom img.logo {
+    width: 86px;
+}
+header .header-bottom nav {
+    display: flex;
+    flex-direction: fixed;
+    left: 0;
+    top: 60px;
+    width: 80vw;
+    height: calc(100vh-60px);
+    border: 1px solid white;
+}
+header .header-bottom menu-usuarios {
+    display: none;
+}
 
 
 
